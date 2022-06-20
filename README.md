@@ -19,9 +19,9 @@ Si por el contrario usas **Linux** deberás instalar los paquetes `nodejs` y `np
 
 > `sudo apt install nodejs npm -y`
 
-Una vez instalado *Node.js* lo siguiente será clonar el repositorio de GitHub:
+Una vez instalado *Node.js* lo siguiente será clonar este repositorio de GitHub:
 
-> https://github.com/x7bit/dev_technical_test
+> `git clone https://github.com/x7bit/dev_technical_test.git`
 
 Una vez tengamos el proyecto en nuestro sistema, nos tendremos que poner en la ráiz del mismo, y ejecutar:
 
