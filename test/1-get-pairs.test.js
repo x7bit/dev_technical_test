@@ -22,6 +22,9 @@ describe(`getPairs(numArray, target);\n${numArrayDesc}\n `, () => {
 
   test('getPairs(numArray, 8) debe ser igual a [[7,1], [5,3]]', () => {
     const pairs8 = getPairs(numArray, 8);
-    expect(pairs8).toEqual([[7, 1], [5 ,3]]);
+    expect(Array.isArray(pairs8)).toBe(true);
+    expect(pairs8).toHaveLength(2);
+    expect(pairs8).toContainEqual([7, 1]);
+    expect(pairs8).toContainEqual([5 ,3]);
   });
 });
