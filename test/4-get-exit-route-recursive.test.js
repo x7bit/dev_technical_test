@@ -1,4 +1,5 @@
-import { indent } from './test-utils.js';
+import test  from 'test';
+import assert from 'assert/strict';
 import { getExitRouteRecursive } from '../src/4-get-exit-route-recursive.js';
 
 const laby1 = {
@@ -6,12 +7,11 @@ const laby1 = {
   forward: false,
   right: false
 };
-const laby1Desc = indent(`labyrinth = ${JSON.stringify(laby1, null, 2)};`, 4);
-describe(`getExitRouteRecursive(labyrinth);\n${laby1Desc}\n `, () => {
+test(`getExitRouteRecursive(labyrinth)\n labyrinth = ${JSON.stringify(laby1, null, 2)}`, () => {
 
   test(`getExitRouteRecursive(labyrinth) debe ser igual a []`, () => {
     const route = getExitRouteRecursive(laby1);
-    expect(route).toEqual([]);
+    assert.deepEqual(route, []);
   });
 });
 
@@ -28,12 +28,11 @@ const laby2 = {
   },
   right: false
 };
-const laby2Desc = indent(`labyrinth = ${JSON.stringify(laby2, null, 2)};`, 4);
-describe(`getExitRouteRecursive(labyrinth);\n${laby2Desc}\n `, () => {
+test(`getExitRouteRecursive(labyrinth)\n labyrinth = ${JSON.stringify(laby2, null, 2)}`, () => {
 
   test(`getExitRouteRecursive(labyrinth) debe ser igual a ['forward', 'left', 'right']`, () => {
     const route = getExitRouteRecursive(laby2);
-    expect(route).toEqual(['forward', 'left', 'right']);
+    assert.deepEqual(route, ['forward', 'left', 'right']);
   });
 });
 
@@ -58,11 +57,10 @@ const laby3 = {
     right: false
   }
 };
-const laby3Desc = indent(`labyrinth = ${JSON.stringify(laby3, null, 2)};`, 4);
-describe(`getExitRouteRecursive(labyrinth);\n${laby3Desc}\n `, () => {
+test(`getExitRouteRecursive(labyrinth)\n labyrinth = ${JSON.stringify(laby3, null, 2)}`, () => {
 
   test(`getExitRouteRecursive(labyrinth) debe ser igual a ['right', 'left', 'forward']`, () => {
     const route = getExitRouteRecursive(laby3);
-    expect(route).toEqual(['right', 'left', 'forward']);
+    assert.deepEqual(route, ['right', 'left', 'forward']);
   });
 });

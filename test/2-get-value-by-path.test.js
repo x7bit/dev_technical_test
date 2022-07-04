@@ -1,4 +1,5 @@
-import { indent } from './test-utils.js';
+import test from 'test';
+import assert from 'assert/strict';
 import { getValueByPath } from '../src/2-get-value-by-path.js';
 
 const obj = {
@@ -10,36 +11,36 @@ const obj = {
     d: true
   }
 };
-const objDesc = indent(`obj = ${JSON.stringify(obj, null, 2)};`, 4);
-describe(`getValueByPath(obj, path);\n${objDesc}\n `, () => {
+test(`getValueByPath(obj, path)\n obj = ${JSON.stringify(obj, null, 2)}`, (t) => {
 
   test(`getValueByPath(obj, []) debe ser igual a obj`, () => {
     const val = getValueByPath(obj, []);
-    expect(val).toBe(obj);
+    assert.deepEqual(val, obj);
   });
 
   test(`getValueByPath(obj, ['z']) debe ser igual a null`, () => {
     const val = getValueByPath(obj, ['z']);
-    expect(val).toBe(null);
+    assert.equal(val, null);
   });
 
   test(`getValueByPath(obj, ['a']) debe ser igual a false`, () => {
     const val = getValueByPath(obj, ['a']);
-    expect(val).toBe(false);
+    assert.equal(val, false);
   });
 
   test(`getValueByPath(obj, ['b', 'c']) debe ser igual a { e: 'test' }`, () => {
     const val = getValueByPath(obj, ['b', 'c']);
-    expect(val).toEqual({ e: 'test' });
+    assert.deepEqual(val, { e: 'test' });
   });
 
   test(`getValueByPath(obj, ['b', 'd']) debe ser igual a true`, () => {
     const val = getValueByPath(obj, ['b', 'd']);
-    expect(val).toBe(true);
+    assert.equal(val, true);
   });
 
   test(`getValueByPath(obj, ['b', 'c', 'e']) debe ser igual a 'test'`, () => {
     const val = getValueByPath(obj, ['b', 'c', 'e']);
-    expect(val).toBe('test');
+    assert.equal(val, 'test');
   });
+
 });

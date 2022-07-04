@@ -1,4 +1,5 @@
-import { indent } from './test-utils.js';
+import test from 'test';
+import assert from 'assert/strict';
 import { getExitRouteIterative } from '../src/3-get-exit-route-iterative.js';
 
 const laby1 = {
@@ -6,13 +7,13 @@ const laby1 = {
   forward: false,
   right: false
 };
-const laby1Desc = indent(`labyrinth = ${JSON.stringify(laby1, null, 2)};`, 4);
-describe(`getExitRouteIterative(labyrinth);\n${laby1Desc}\n `, () => {
+test(`getExitRouteIterative(labyrinth)\n labyrinth = ${JSON.stringify(laby1, null, 2)}`, () => {
 
   test(`getExitRouteIterative(labyrinth) debe ser igual a []`, () => {
     const route = getExitRouteIterative(laby1);
-    expect(route).toEqual([]);
+    assert.deepEqual(route, []);
   });
+
 });
 
 const laby2 = {
@@ -28,13 +29,13 @@ const laby2 = {
   },
   right: false
 };
-const laby2Desc = indent(`labyrinth = ${JSON.stringify(laby2, null, 2)};`, 4);
-describe(`getExitRouteIterative(labyrinth);\n${laby2Desc}\n `, () => {
+test(`getExitRouteIterative(labyrinth)\n labyrinth = ${JSON.stringify(laby2, null, 2)}`, () => {
 
   test(`getExitRouteIterative(labyrinth) debe ser igual a ['forward', 'left', 'right']`, () => {
     const route = getExitRouteIterative(laby2);
-    expect(route).toEqual(['forward', 'left', 'right']);
+    assert.deepEqual(route, ['forward', 'left', 'right']);
   });
+
 });
 
 const laby3 = {
@@ -58,11 +59,11 @@ const laby3 = {
     right: false
   }
 };
-const laby3Desc = indent(`labyrinth = ${JSON.stringify(laby3, null, 2)};`, 4);
-describe(`getExitRouteIterative(labyrinth);\n${laby3Desc}\n `, () => {
+test(`getExitRouteIterative(labyrinth)\n labyrinth = ${JSON.stringify(laby3, null, 2)}`, () => {
 
   test(`getExitRouteIterative(labyrinth) debe ser igual a ['right', 'left', 'forward']`, () => {
     const route = getExitRouteIterative(laby3);
-    expect(route).toEqual(['right', 'left', 'forward']);
+    assert.deepEqual(route, ['right', 'left', 'forward']);
   });
+
 });

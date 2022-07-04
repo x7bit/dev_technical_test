@@ -1,16 +1,16 @@
 {
   "name": "dev_technical_test",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Prueba técnica de desarrollo sobre Node.js",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "test": "node --no-warnings --experimental-vm-modules node_modules/jest/bin/jest.js --noStackTrace --testTimeout=1000"
+    "test": "node node_modules/test/bin/node--test.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^28.1.1"
+    "test": "^3.0.1"
   }
 }
