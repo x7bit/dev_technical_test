@@ -1,4 +1,4 @@
-import test  from 'test';
+import test from 'test';
 import assert from 'assert/strict';
 import { getExitRouteRecursive } from '../src/4-get-exit-route-recursive.js';
 
@@ -7,12 +7,10 @@ const laby1 = {
   forward: false,
   right: false
 };
-test(`getExitRouteRecursive(labyrinth)\n labyrinth = ${JSON.stringify(laby1, null, 2)}`, () => {
-
-  test(`getExitRouteRecursive(labyrinth) debe ser igual a []`, () => {
-    const route = getExitRouteRecursive(laby1);
-    assert.deepEqual(route, []);
-  });
+const laby1Desc = `labyrinth = ${JSON.stringify(laby1, null, 2)}`;
+test(`getExitRouteRecursive(labyrinth) debe ser igual a []\n${laby1Desc}`, () => {
+  const route = getExitRouteRecursive(laby1);
+  assert.deepEqual(route, []);
 });
 
 const laby2 = {
@@ -28,12 +26,10 @@ const laby2 = {
   },
   right: false
 };
-test(`getExitRouteRecursive(labyrinth)\n labyrinth = ${JSON.stringify(laby2, null, 2)}`, () => {
-
-  test(`getExitRouteRecursive(labyrinth) debe ser igual a ['forward', 'left', 'right']`, () => {
-    const route = getExitRouteRecursive(laby2);
-    assert.deepEqual(route, ['forward', 'left', 'right']);
-  });
+const laby2Desc = `labyrinth = ${JSON.stringify(laby2, null, 2)}`;
+test(`getExitRouteRecursive(labyrinth) debe ser igual a ['forward','left','right']\n${laby2Desc}`, () => {
+  const route = getExitRouteRecursive(laby2);
+  assert.deepEqual(route, ['forward', 'left', 'right']);
 });
 
 const laby3 = {
@@ -57,10 +53,8 @@ const laby3 = {
     right: false
   }
 };
-test(`getExitRouteRecursive(labyrinth)\n labyrinth = ${JSON.stringify(laby3, null, 2)}`, () => {
-
-  test(`getExitRouteRecursive(labyrinth) debe ser igual a ['right', 'left', 'forward']`, () => {
-    const route = getExitRouteRecursive(laby3);
-    assert.deepEqual(route, ['right', 'left', 'forward']);
-  });
+const laby3Desc = `labyrinth = ${JSON.stringify(laby3, null, 2)}`;
+test(`getExitRouteRecursive(labyrinth) debe ser igual a ['right','left','forward']\n${laby3Desc}`, () => {
+  const route = getExitRouteRecursive(laby3);
+  assert.deepEqual(route, ['right', 'left', 'forward']);
 });
