@@ -21,7 +21,7 @@
  * Adicionalmente se piden estos requerimientos:
  *  - Se tiene que hacer todo usando únicamente esta función 'getValueByPath'.
  *
- * Tiempo estimado máximo: 10 minutos.
+ * Tiempo estimado máximo: 10 minutos. Dificultad baja.
  *
  * @param {object} obj
  * @param {path} path Array simple de strings

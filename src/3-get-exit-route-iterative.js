@@ -41,7 +41,7 @@ import { getValueByPath } from './2-get-value-by-path.js';
  *  - En el caso de que haya más de una salida, con devolver una cualquiera es suficiente.
  *  - No se permite recursividad.
  *
- * Tiempo estimado máximo 40 minutos.
+ * Tiempo estimado máximo 40 minutos. Dificultad alta.
  *
  * @param {object} labyrinth Objeto laberinto tipo árbol binario
  * @returns {array} Array con la ruta a la salida. Por ejemplo ['right', 'left', 'forward']

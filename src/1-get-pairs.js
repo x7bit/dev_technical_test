@@ -14,7 +14,7 @@
  *      array de números.
  *  - Se tiene que hacer todo usando únicamente esta función 'getPairs'.
  *
- * Tiempo estimado máximo: 20 minutos.
+ * Tiempo estimado máximo: 20 minutos. Dificultad media.
  *
  * @param {array} numArray Array de números de entrada
  * @param {number} target Número objetivo
