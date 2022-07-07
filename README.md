@@ -39,6 +39,13 @@ Para ejecutar los **tests**, desde la raíz del proyecto ejecutar:
 
 > `npm test`
 
+También hay scripts para ejecutar los test de cada ejercicio de forma individualizada:
+
+1. `npm run test1`: ejecuta los test únicamente para el ejercicio 1 `src/1-get-pairs.js`.
+1. `npm run test2`: ejecuta los test únicamente para el ejercicio 2 `src/2-get-value-by-path.js`.
+1. `npm run test3`: ejecuta los test únicamente para el ejercicio 3 `src/3-get-exit-route-iterative.js`.
+1. `npm run test4`: ejecuta los test únicamente para el ejercicio 4 `src/4-get-exit-route-recursive.js`.
+
 Si bien puedes usar tu editor favorito, se recomienda usar *Visual Studio Code* para esta prueba por tener un terminal integrado, y por lo sencillo que resulta ejecutar y depurar un proyecto *Node.js*. De hecho, el proyecto ya tiene una configuración para poder depurar sin que haya que hacer más nada en el siguiente archivo:
 
 > `.vscode/launch.json`
