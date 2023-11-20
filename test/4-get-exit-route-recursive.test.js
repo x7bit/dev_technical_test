@@ -1,5 +1,5 @@
-import test from 'test';
-import assert from 'assert/strict';
+import test from 'node:test';
+import assert from 'node:assert/strict';
 import { getExitRouteRecursive } from '../src/4-get-exit-route-recursive.js';
 
 const laby1 = {

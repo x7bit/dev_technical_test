@@ -11,7 +11,7 @@ Se recomienda pasar al siguiente ejercicio en caso de que te atasques con cualqu
 
 ## Preparación del entorno
 
-Lo primero de todo es instalar *Node.js* en tu sistema si no lo tienes instalado ya. Esta prueba se creó y se probó con la versión **16**, aunque no debería de haber problema en usar una versión algo inferior como la 14 o incluso la 12. Si usas **Windows** o **MacOS** descárgatelo de aquí:
+Lo primero de todo es instalar *Node.js* en tu sistema si no lo tienes instalado ya. Esta prueba se creó y se probó con la versión **20**, aunque no debería de haber problema en usar una versión inferior como la 18. Si usas **Windows** o **MacOS** descárgatelo de aquí:
 
 > https://nodejs.org/es/download/
 
@@ -22,12 +22,6 @@ Si por el contrario usas **Linux** deberás instalar los paquetes `nodejs` y `np
 Una vez instalado *Node.js* lo siguiente será clonar este repositorio de GitHub:
 
 > `git clone https://github.com/x7bit/dev_technical_test.git`
-
-Una vez tengamos el proyecto en nuestro sistema, nos tendremos que poner en la ráiz del mismo, y ejecutar:
-
-> `npm install`
-
-Y si bien este último paso no es totalmente imprescindible, es necesario para poder ejecutar los *tests*.
 
 ## Ejecución, tests y depuración
 

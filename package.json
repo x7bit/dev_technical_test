@@ -6,15 +6,12 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "test": "node --stack-trace-limit=0 node_modules/test/bin/node--test.js",
-    "test1": "node --stack-trace-limit=0 node_modules/test/bin/node--test.js test/1-get-pairs.test.js",
-    "test2": "node --stack-trace-limit=0 node_modules/test/bin/node--test.js test/2-get-value-by-path.test.js",
-    "test3": "node --stack-trace-limit=0 node_modules/test/bin/node--test.js test/3-get-exit-route-iterative.test.js",
-    "test4": "node --stack-trace-limit=0 node_modules/test/bin/node--test.js test/4-get-exit-route-recursive.test.js"
+    "test": "node --test test",
+    "test1": "node --test test/1-get-pairs.test.js",
+    "test2": "node --test test/2-get-value-by-path.test.js",
+    "test3": "node --test test/3-get-exit-route-iterative.test.js",
+    "test4": "node --test test/4-get-exit-route-recursive.test.js"
   },
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "test": "^3.0.1"
-  }
+  "license": "ISC"
 }

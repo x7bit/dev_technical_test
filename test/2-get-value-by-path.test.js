@@ -1,5 +1,5 @@
-import test from 'test';
-import assert from 'assert/strict';
+import test from 'node:test';
+import assert from 'node:assert/strict';
 import { getValueByPath } from '../src/2-get-value-by-path.js';
 
 const obj = {

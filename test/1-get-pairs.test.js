@@ -1,5 +1,5 @@
-import test from 'test';
-import assert from 'assert';
+import test from 'node:test';
+import assert from 'node:assert';
 import { getPairs } from '../src/1-get-pairs.js';
 
 const numArray = [7, 5, 2, 8, 1, 3];
