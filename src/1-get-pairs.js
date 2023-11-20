@@ -6,13 +6,16 @@
  * Así por ejemplo para un array [7, 5, 1, 3] y un número objetivo igual a 8, la solución sería:
  *    [[7, 1], [5, 3]]
  *
- * Adicionalmente se piden estos requerimientos:
- *  - Sólo se puede iterar el array de números una única vez (eso incluye tanto bucles como
- *      funciones prototipo de arrays como forEach, find, filter, map, etc.).
+ * Requerimientos:
  *  - No se pueden repetir pares sin importar su orden, [3, 8] y [8, 3] se consideran repetidos.
  *  - El orden de los números en los pares debe respetar el mismo orden que tenían dentro del
  *      array de números.
  *  - Se tiene que hacer todo usando únicamente esta función 'getPairs'.
+ *
+ * Opcional:
+ *  - Iterar el array de números una única vez (eso incluye tanto bucles como funciones prototipo
+ *      de arrays como forEach, find, filter, map, etc.) para coseguir una complejidad
+ *      algorítimica de O(n).
  *
  * Tiempo estimado máximo: 20 minutos. Dificultad media.
  *

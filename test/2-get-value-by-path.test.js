@@ -18,9 +18,9 @@ test(`getValueByPath(obj, []) debe ser igual a obj\n${objDesc}`, () => {
   assert.deepEqual(val, obj);
 });
 
-test(`getValueByPath(obj, ['z']) debe ser igual a null\n${objDesc}`, () => {
+test(`getValueByPath(obj, ['z']) debe ser igual a undefined\n${objDesc}`, () => {
   const val = getValueByPath(obj, ['z']);
-  assert.equal(val, null);
+  assert.equal(val, undefined);
 });
 
 test(`getValueByPath(obj, ['a']) debe ser igual a false\n${objDesc}`, () => {

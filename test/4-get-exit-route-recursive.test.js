@@ -8,9 +8,9 @@ const laby1 = {
   right: false
 };
 const laby1Desc = `labyrinth = ${JSON.stringify(laby1, null, 2)}`;
-test(`getExitRouteRecursive(labyrinth) debe ser igual a []\n${laby1Desc}`, () => {
+test(`getExitRouteRecursive(labyrinth) debe ser igual a undefined\n${laby1Desc}`, () => {
   const route = getExitRouteRecursive(laby1);
-  assert.deepEqual(route, []);
+  assert.deepEqual(route, undefined);
 });
 
 const laby2 = {

@@ -1,7 +1,7 @@
 /**
  * Para un objeto multinivel, es decir, que el valor de alguna de sus propiedades pueda ser otro
- * objeto y así sucesivamente, y para un array simple de strings con la ruta hasta el valor
- * deseado, descender por el objeto y devolver dicho valor, o null en el caso de que no haya ruta.
+ * objeto y así sucesivamente, y para un array simple de strings con la ruta hasta el valor dado,
+ * descender por el objeto y devolver dicho valor, o undefined en el caso de que no haya ruta.
  *
  * Así por ejemplo si el objeto es:
  *    obj = {
@@ -18,7 +18,7 @@
  * Entonces la solución sería:
  *    'Hola'
  *
- * Adicionalmente se piden estos requerimientos:
+ * Requerimientos:
  *  - Se tiene que hacer todo usando únicamente esta función 'getValueByPath'.
  *
  * Tiempo estimado máximo: 10 minutos. Dificultad baja.
